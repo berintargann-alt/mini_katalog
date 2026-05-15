@@ -54,7 +54,14 @@ flutter run
 
 ## Ekran Görüntüleri
 
-Uygulamaya ait ekran görüntüleri proje içerisine eklenmiştir.
+### Ana Sayfa
+
+![Ana Sayfa](screenshots/anasayfa.png)
+
+### Ürün Detay Sayfası
+
+![Detay Sayfası](screenshots/detay.png)
+
 
 ## Geliştirici
 
