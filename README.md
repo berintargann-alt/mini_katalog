@@ -1,17 +1,61 @@
-# mini_katalog
+# Mini Katalog Uygulaması
 
-A new Flutter project.
+Bu proje Flutter kullanılarak geliştirilmiş basit bir katalog uygulamasıdır.
 
-## Getting Started
+## Proje Özellikleri
 
-This project is a starting point for a Flutter application.
+* Ürün listeleme
+* GridView ile kart tasarımı
+* Ürün detay sayfası
+* Sayfalar arası geçiş (Navigator)
+* Ürün arama sistemi
+* Sepete ekleme simülasyonu
+* Asset görsel kullanımı
+* Product model yapısı kullanımı
 
-A few resources to get you started if this is your first Flutter project:
+## Kullanılan Teknolojiler
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+* Flutter
+* Dart
+* Material Design
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Flutter Sürümü
+
+Flutter 3.41.9
+
+## Proje Yapısı
+
+```text id="rq7v1g"
+lib/
+ ├── main.dart
+ ├── models/
+ │    └── product.dart
+ └── pages/
+      └── detail_page.dart
+```
+
+## Çalıştırma Adımları
+
+```bash id="7rm5x0"
+git clone https://github.com/berintargann-alt/mini_katalog.git
+```
+
+```bash id="2s8x1n"
+cd mini_katalog
+```
+
+```bash id="4dp6yw"
+flutter pub get
+```
+
+```bash id="xq9e3p"
+flutter run
+```
+
+## Ekran Görüntüleri
+
+Uygulamaya ait ekran görüntüleri proje içerisine eklenmiştir.
+
+## Geliştirici
+
+Berin Targan
