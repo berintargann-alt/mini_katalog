@@ -1,0 +1,101 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+PathAccessException: PathAccessException: Deletion failed, path = 'C:\Users\BERN~1\AppData\Local\Temp\flutter_tools.cacea1f\flutter_tool.9f547729' (OS Error: Dosya başka bir işlem tarafından kullanıldığından bu işlem dosyaya erişemiyor, errno = 32)
+
+```
+#0      _Directory._deleteSync (dart:io/directory_impl.dart:216:7)
+#1      FileSystemEntity.deleteSync (dart:io/file_system_entity.dart:425:7)
+#2      ForwardingFileSystemEntity.deleteSync (package:file/src/forwarding/forwarding_file_system_entity.dart:70:16)
+#3      ErrorHandlingDirectory.deleteSync.<anonymous closure> (package:flutter_tools/src/base/error_handling_io.dart:451:22)
+#4      _runSync (package:flutter_tools/src/base/error_handling_io.dart:552:14)
+#5      ErrorHandlingDirectory.deleteSync (package:flutter_tools/src/base/error_handling_io.dart:450:12)
+#6      ResidentRunner.preExit (package:flutter_tools/src/resident_runner.dart:1435:25)
+#7      ResidentRunner.exit (package:flutter_tools/src/resident_runner.dart:1278:11)
+<asynchronous suspension>
+#8      TerminalHandler._commonTerminalInputHandler (package:flutter_tools/src/resident_runner.dart:1830:9)
+<asynchronous suspension>
+#9      TerminalHandler.processTerminalInput (package:flutter_tools/src/resident_runner.dart:1906:7)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[33m[!][39m Flutter (Channel stable, 3.41.9, on Microsoft Windows [Version
+    10.0.26200.8457], locale tr-TR) [881ms]
+    [32m•[39m Flutter version 3.41.9 on channel stable at C:\flutter
+    [33m![39m The flutter binary is not on your path. Consider adding
+      C:\flutter\bin to your path.
+    [33m![39m The dart binary is not on your path. Consider adding
+      C:\flutter\bin to your path.
+    [32m•[39m Upstream repository https://github.com/flutter/flutter.git
+    [32m•[39m Framework revision 00b0c91f06 (2 weeks ago), 2026-04-29
+      10:03:19 -0700
+    [32m•[39m Engine revision 42d3d75a56
+    [32m•[39m Dart version 3.11.5
+    [32m•[39m DevTools version 2.54.2
+    [32m•[39m Feature flags: enable-web, enable-linux-desktop,
+      enable-macos-desktop, enable-windows-desktop, enable-android,
+      enable-ios, cli-animations, enable-native-assets,
+      omit-legacy-version-file, enable-lldb-debugging,
+      enable-uiscene-migration
+    [32m•[39m If those were intentional, you can disregard the above
+      warnings; however it is recommended to use "git" directly to
+      perform update checks and upgrades.
+
+[32m[✓][39m Windows Version (11 Home Single Language 64-bit, 25H2, 2009)
+    [2,8s]
+
+[32m[✓][39m Android toolchain - develop for Android devices (Android SDK
+    version 36.1.0) [3,1s]
+    [32m•[39m Android SDK at C:\Users\BERİN\AppData\Local\Android\sdk
+    [32m•[39m Emulator version 36.5.11.0 (build_id 15261927) (CL:N/A)
+    [32m•[39m Platform android-36.1, build-tools 36.1.0
+    [32m•[39m Java binary at: C:\Program Files\Android\Android
+      Studio\jbr\bin\java
+      This is the JDK bundled with the latest Android Studio
+      installation on this machine.
+      To manually set the JDK path, use: `flutter config
+      --jdk-dir="path/to/jdk"`.
+    [32m•[39m Java version OpenJDK Runtime Environment (build
+      21.0.10+-14961533-b1163.108)
+    [32m•[39m All Android licenses accepted.
+
+[32m[✓][39m Chrome - develop for the web [692ms]
+    [32m•[39m Chrome at C:\Program Files
+      (x86)\Google\Chrome\Application\chrome.exe
+
+[33m[!][39m Visual Studio - develop Windows apps (SQL Server Management
+    Studio 22 22.5.0) [691ms]
+    [32m•[39m Visual Studio at C:\Program Files\Microsoft SQL Server
+      Management Studio 22\Release
+    [32m•[39m SQL Server Management Studio 22 version 22.5.11709.299
+    [31m✗[39m Visual Studio is missing necessary components. Please re-run
+      the Visual Studio installer for the "Desktop development with
+      C++" workload, and include these components:
+        MSVC v142 - VS 2019 C++ x64/x86 build tools
+         - If there are multiple build tool versions available,
+         install the latest
+        C++ CMake tools for Windows
+        Windows 10 SDK
+
+[32m[✓][39m Connected device (3 available) [166ms]
+    [32m•[39m Windows (desktop) • windows • windows-x64    • Microsoft
+      Windows [Version 10.0.26200.8457]
+    [32m•[39m Chrome (web)      • chrome  • web-javascript • Google Chrome
+      148.0.7778.98
+    [32m•[39m Edge (web)        • edge    • web-javascript • Microsoft Edge
+      148.0.3967.54
+
+[32m[✓][39m Network resources [1.659ms]
+    [32m•[39m All expected network resources are available.
+
+[33m![39m Doctor found issues in 2 categories.
+```
